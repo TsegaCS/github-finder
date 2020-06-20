@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Navbar from "./components/layout/Navbar";
+import Users from "./components/users/Users";
 
 class App extends Component {
   render() {
-    const name = "Tsegazeab";
-
-    const foo = () => 'Bar';
-
     return (
-      <div className='App' >
-        <h1>Hello {foo()}</h1>
+      <div className="App">
+        <Navbar />
+        <Users />
       </div>
     );
   }
